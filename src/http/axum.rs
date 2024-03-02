@@ -1,5 +1,6 @@
 use async_trait::async_trait;
-use axum::{extract::FromRequestParts, http::request::Parts, RequestPartsExt, TypedHeader};
+use axum::{extract::FromRequestParts, http::request::Parts, RequestPartsExt};
+use axum_extra::TypedHeader;
 use headers::{authorization::Bearer, Authorization};
 use serde::de::DeserializeOwned;
 
